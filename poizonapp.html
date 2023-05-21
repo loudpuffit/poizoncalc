@@ -1,3 +1,17 @@
+<script>bridge.send('VKWebAppInit')
+  .then((data) => { 
+    if (data.result) {
+      // Приложение инициализировано
+    } else {
+      // Ошибка
+    }
+  })
+  .catch((error) => {
+    // Ошибка
+    console.log(error);
+  });
+</script>
+
 <div class="uCalc_432821"></div>
 <script>
  var widgetOptions432821 = {
